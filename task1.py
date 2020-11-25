@@ -81,6 +81,25 @@ import random
 
 # task 3
 
+# class Deck:
+#     cards = [(suit, value) for suit in ['червы', 'бубны', 'трефы', 'пики'] for value in [str(i) for i in range(2, 11)] + list("JKQA")]
+
+#     class Card:
+#         def deal(self):
+#             card = random.choice(Deck.cards)
+#             print(f"карты {card} в колоде карт больше нету")
+#             crd = Deck.cards.index(card)
+#             del(Deck.cards[crd])
+
+#         def mix(self):
+#             Deck.cards = [(suit, value) for suit in ['червы', 'бубны', 'трефы', 'пики'] for value in [str(i) for i in range(2, 11)] + list("JKQA")]
+#             random.shuffle(Deck.cards)
+
+
+# card = Deck.Card()
+# card.deal()
+# print(Deck.cards)
+# card.mix()
 
 
 # task 4 
