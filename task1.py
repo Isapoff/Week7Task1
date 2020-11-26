@@ -49,32 +49,37 @@ import random
 
 # class Backend(Coder):
 
-#     def init(self, languages_backend):
+#     def __init__(self, languages_backend):
 #         self.experience = languages_backend
 
 #     def get_info(self):
-#         print(f'время выполнения кода {self.count_code_time}с')
+#         print(f'{self.experience} время выполнения кода {self.count_code_time}с')
 
 #     def coding(self, time):
 #         self.count_code_time += time
 
 # class Frontend(Coder):
 
-#     def init(self, languages_frontend):
+#     def __init__(self, languages_frontend):
 #         self.experience = languages_frontend
 
 #     def get_info(self):
-#         print(f'время выполнения кода {self.count_code_time}с')
+#         print(f'{self.experience} время выполнения кода {self.count_code_time}с')
 
 #     def coding(self, time):
 #         self.count_code_time += time
 
 
 # class FullStack(Frontend, Backend, Coder):
-#     def init(self, languages_frontend):
+#     def __init__(self, languages_backend, languages_frontend):
+#         self.experience = languages_backend
 #         self.experience = languages_frontend
 
-# fs = FullStack()
+# back = Backend('python')
+# back.coding(1.23)
+# back.get_info()
+
+# fs = FullStack('python', 'js')
 # fs.coding(0.536)
 # fs.get_info()
 
